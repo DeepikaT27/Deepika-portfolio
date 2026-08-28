@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Deepika T - Portfolio. Aspiring Software Engineer, Flutter & Mobile App Developer, UI/UX Designer, and IT Graduate (B.Tech IT 2026, 8.44 CGPA).">
+    content="Deepika T - Mobile App Developer & UI/UX Designer. B.Tech IT (2026, 8.44 CGPA). Hands-on experience in Flutter, Dart, Firebase, and Figma.">
   <meta name="keywords"
-    content="Deepika T, Deepika Portfolio, Flutter Developer, Mobile App Developer, UI/UX Designer, Python, Kalasalingam Academy, Fresher Portfolio">
+    content="Deepika T, Flutter Developer, Mobile App Developer, UI/UX Designer, Figma, Python, B.Tech IT, Portfolio">
   <meta name="author" content="Deepika T">
-  <title>Deepika T | Mobile App Developer & UI/UX Designer | Portfolio</title>
+  <title>Deepika T | Mobile App Developer & UI/UX Designer</title>
 
   <!-- Favicon -->
   <link rel="icon"
@@ -43,8 +43,8 @@
         <span class="brand-dot"></span>
       </a>
 
-      <!-- Desktop Nav Links -->
-      <nav>
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Main Navigation">
         <ul class="nav-links" id="nav-links">
           <li><a href="#hero" class="nav-link active">Home</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
@@ -57,20 +57,21 @@
       </nav>
 
       <!-- Nav Actions -->
-      <div class="nav-actions">
-        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+      <!-- <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Dark/Light Theme">
           ☀️
-        </button>
-        <button class="btn btn-outline btn-sm open-resume-modal" id="nav-resume-btn">
-          📄 Resume
-        </button>
-        <a href="#contact" class="btn btn-primary btn-sm" id="nav-hire-btn">
-          Hire Me
-        </a>
-        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
-          ☰
-        </button>
-      </div>
+        </button> -->
+      <button class="btn btn-outline btn-sm open-resume-modal" id="nav-resume-btn">
+        <span>📄</span>
+        <span>Resume</span>
+      </button>
+      <a href="#contact" class="btn btn-primary btn-sm" id="nav-hire-btn">
+        Hire Me
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        ☰
+      </button>
+    </div>
     </div>
   </header>
 
@@ -79,24 +80,24 @@
     <section class="section hero-section" id="hero">
       <div class="container">
         <div class="hero-grid">
-          <!-- Hero Text -->
+          <!-- Hero Text Content -->
           <div class="hero-content">
-            <div class="badge-status">
-              <span class="status-dot"></span>
-              <span>Open to Software Roles &amp; Internships • 2026 Batch</span>
-            </div>
+            <!-- <div class="badge-status">
+              <span class="status-dot"></span> -->
+            <!-- <span>Available for Software Roles &amp; Internships • 2026 Batch</span> -->
+            <!-- </div>  -->
             <h1 class="hero-title">
               Hi, I'm <span class="gradient-text">Deepika T</span>
             </h1>
-            <div class="hero-role-wrapper">
+            <!-- <div class="hero-role-wrapper">
               <span>I build</span>
               <span id="typing-text" class="hero-role-text">Mobile App Experiences</span>
-              <span class="typing-cursor"></span>
-            </div>
+              <span class="typing-cursor" aria-hidden="true"></span>
+            </div> -->
             <p class="hero-description">
-              Information Technology undergraduate at Kalasalingam Academy with hands-on experience in <strong>Flutter,
-                Dart, Firebase, and UI/UX Prototyping</strong>. Passionate about crafting user-centric mobile
-              applications, modern frontend interfaces, and exploring AI-driven solutions.
+              Information Technology undergraduate from Kalasalingam Academy specializing in <strong>Flutter mobile
+                development, UI/UX prototyping in Figma, and AI solutions</strong>. Passionate about crafting
+              high-performance, user-centric software.
             </p>
             <div class="hero-cta-group">
               <a href="#projects" class="btn btn-primary" id="hero-view-projects-btn">
@@ -107,10 +108,10 @@
                 <span>Download CV</span>
                 <span>📥</span>
               </a>
-              <button class="btn btn-outline open-resume-modal" id="hero-preview-resume-btn">
+              <!-- <button class="btn btn-outline btn-sm open-resume-modal">
                 <span>View PDF</span>
                 <span>👁️</span>
-              </button>
+              </button> -->
             </div>
 
             <!-- Hero Stats Grid -->
@@ -135,27 +136,12 @@
           </div>
 
           <!-- Hero Visual & Portrait -->
-
           <div class="hero-visual">
             <div class="hero-image-wrapper">
               <div class="hero-image-inner">
-                <img src="assets/profile.jpeg" alt="Deepika T" class="hero-img">
+                <img src="assets/profile.jpeg" alt="Deepika T - Mobile Developer & UI/UX Designer" class="hero-img">
               </div>
             </div>
-
-            <!-- Floating Tech Badges
-            <div class="floating-badge floating-badge-1">
-              <span>📱</span>
-              <span>Flutter &amp; Dart</span>
-            </div>
-            <div class="floating-badge floating-badge-2">
-              <span>🎨</span>
-              <span>Figma &amp; UI/UX</span>
-            </div>
-            <div class="floating-badge floating-badge-3">
-              <span>🔥</span>
-              <span>Firebase Cloud</span>
-            </div> -->
           </div>
         </div>
       </div>
@@ -168,7 +154,7 @@
           <span class="section-subtitle">Get to know me</span>
           <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
           <p class="section-desc">
-            A dedicated and motivated IT student eager to turn ideas into seamless, intuitive software solutions.
+            A dedicated and motivated IT student turning ideas into intuitive, real-world digital solutions.
           </p>
         </div>
 
@@ -176,26 +162,24 @@
           <!-- Text Story & Details -->
           <div class="about-text-content">
             <p>
-              I am currently pursuing my <strong>B.Tech in Information Technology</strong> at <strong>Kalasalingam
-                Academy of Research and Education</strong> (CGPA: 8.44/10). With a strong foundation in Java, Python,
-              and web technologies, I specialize in building responsive mobile apps using Flutter and designing modern
-              interfaces in Figma.
+              I have completed my <strong>B.Tech in Information Technology</strong> at <strong>Kalasalingam Academy of
+                Research and Education</strong> (CGPA: 8.44/10). I specialize in cross-platform mobile development with
+              Flutter, cloud backend integration with Firebase, and high-fidelity interface design in Figma.
             </p>
             <p>
-              During my internships at <strong>Aslaniya Tech</strong> and <strong>Kaashiv Infotech</strong>, I
-              contributed to real-time mobile application development, Firebase integration, and machine learning model
-              implementations. I enjoy solving complex problems, writing clean code, and working in collaborative team
-              environments.
+              Through internships at <strong>Aslaniya Tech</strong> and <strong>Kaashiv Infotech</strong>, I have
+              contributed to production-ready mobile apps and machine learning models. I enjoy writing clean code,
+              building responsive interfaces, and collaborating on impactful tech solutions.
             </p>
 
             <!-- Quick Details Grid -->
             <div class="about-details-grid">
               <div class="detail-item">
                 <span class="detail-label">Location</span>
-                <span class="detail-value">Virudhunagar, Tamil Nadu, India</span>
+                <span class="detail-value">Virudhunagar, Tamil Nadu</span>
               </div>
               <div class="detail-item">
-                <span class="detail-label">Degree &amp; Year</span>
+                <span class="detail-label">Education</span>
                 <span class="detail-value">B.Tech IT (2022 – 2026)</span>
               </div>
               <div class="detail-item">
@@ -204,14 +188,13 @@
               </div>
               <div class="detail-item">
                 <span class="detail-label">Languages</span>
-                <span class="detail-value">English (Fluent), Tamil (Native)</span>
+                <span class="detail-value">English &amp; Tamil</span>
               </div>
             </div>
 
-            <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+            <div class="about-actions">
               <a href="#contact" class="btn btn-primary btn-sm">Get In Touch</a>
-              <a href="assets/Deepika.pdf" target="_blank" class="btn btn-outline btn-sm">Direct Resume Link
-                ↗</a>
+              <!-- <a href="assets/Deepika.pdf" target="_blank" class="btn btn-outline btn-sm">Direct Resume Link ↗</a> -->
             </div>
           </div>
 
@@ -220,26 +203,26 @@
             <div class="pillar-card">
               <div class="pillar-icon">📱</div>
               <h3 class="pillar-title">Mobile App Dev</h3>
-              <p class="pillar-desc">Building cross-platform Flutter &amp; Dart applications with Firebase backend and
+              <p class="pillar-desc">Cross-platform Flutter &amp; Dart applications with Firebase backend and clean
                 state management.</p>
             </div>
             <div class="pillar-card">
               <div class="pillar-icon">🎨</div>
               <h3 class="pillar-title">UI/UX Design</h3>
-              <p class="pillar-desc">Designing user journeys, wireframes, and high-fidelity mobile prototypes using
+              <p class="pillar-desc">User journeys, wireframes, and interactive high-fidelity mobile prototypes in
                 Figma.</p>
             </div>
             <div class="pillar-card">
               <div class="pillar-icon">🤖</div>
               <h3 class="pillar-title">AI &amp; Computer Vision</h3>
-              <p class="pillar-desc">Developing gesture recognition and offline NLP chatbots with Python, OpenCV, and
+              <p class="pillar-desc">Real-time gesture recognition and offline NLP chatbots using Python, OpenCV, and
                 MediaPipe.</p>
             </div>
             <div class="pillar-card">
               <div class="pillar-icon">⚡</div>
               <h3 class="pillar-title">Software Foundations</h3>
-              <p class="pillar-desc">Strong grounding in Java OOP, SQL databases, Git/GitHub workflows, and agile
-                collaboration.</p>
+              <p class="pillar-desc">Strong grounding in Java OOP, SQL databases, and collaborative Git/GitHub
+                workflows.</p>
             </div>
           </div>
         </div>
@@ -253,17 +236,16 @@
           <span class="section-subtitle">Technical Proficiency</span>
           <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
           <p class="section-desc">
-            A comprehensive overview of my technical stack, development tools, and design capabilities.
+            Core technologies, development frameworks, and design tools I work with.
           </p>
         </div>
 
         <!-- Filter Tabs -->
         <div class="skills-filter-nav">
           <button class="filter-btn active" data-filter="all">All Skills</button>
-          <button class="filter-btn" data-filter="mobile">Mobile &amp; Frontend</button>
+          <button class="filter-btn" data-filter="mobile">Mobile &amp; UI</button>
           <button class="filter-btn" data-filter="backend">Programming &amp; DB</button>
-          <button class="filter-btn" data-filter="design">UI/UX &amp; Tools</button>
-          <button class="filter-btn" data-filter="soft">Professional &amp; Soft Skills</button>
+          <button class="filter-btn" data-filter="tools">Tools &amp; Workflow</button>
         </div>
 
         <!-- Skills Grid -->
@@ -282,8 +264,7 @@
                 <div class="skill-progress-fill" style="width: 88%;"></div>
               </div>
             </div>
-            <p class="skill-desc">Widget architecture, responsive layouts, state management, and real-time app
-              integration.</p>
+            <p class="skill-desc">Widget architecture, responsive mobile layouts, and state management.</p>
           </div>
 
           <!-- Skill 2: Dart -->
@@ -300,11 +281,11 @@
                 <div class="skill-progress-fill" style="width: 85%;"></div>
               </div>
             </div>
-            <p class="skill-desc">Object-oriented concepts, asynchronous programming, streams, and API consumption.</p>
+            <p class="skill-desc">Object-oriented programming, async streams, and REST API integration.</p>
           </div>
 
           <!-- Skill 3: Figma -->
-          <div class="skill-card" data-category="design">
+          <div class="skill-card" data-category="mobile">
             <div class="skill-header">
               <div class="skill-icon-wrap" style="color: #F24E1E;">🎨</div>
               <div class="skill-info">
@@ -317,8 +298,7 @@
                 <div class="skill-progress-fill" style="width: 90%;"></div>
               </div>
             </div>
-            <p class="skill-desc">Wireframing, interactive prototyping, user flow diagrams, and mobile app design
-              systems.</p>
+            <p class="skill-desc">Wireframing, interactive prototyping, and mobile component design systems.</p>
           </div>
 
           <!-- Skill 4: Firebase -->
@@ -335,8 +315,7 @@
                 <div class="skill-progress-fill" style="width: 82%;"></div>
               </div>
             </div>
-            <p class="skill-desc">Authentication, Cloud Firestore, Realtime Database, and backend services integration.
-            </p>
+            <p class="skill-desc">Authentication, Cloud Firestore, Realtime Database, and cloud functions.</p>
           </div>
 
           <!-- Skill 5: Python -->
@@ -353,8 +332,7 @@
                 <div class="skill-progress-fill" style="width: 85%;"></div>
               </div>
             </div>
-            <p class="skill-desc">OpenCV image processing, MediaPipe landmark tracking, ML model scripting, and
-              Streamlit.</p>
+            <p class="skill-desc">OpenCV image processing, MediaPipe landmark tracking, and ML modeling.</p>
           </div>
 
           <!-- Skill 6: Java -->
@@ -362,17 +340,16 @@
             <div class="skill-header">
               <div class="skill-icon-wrap" style="color: #EA2D2E;">☕</div>
               <div class="skill-info">
-                <h4>Java (Core)</h4>
-                <span class="skill-category-tag">Programming</span>
+                <h4>Java</h4>
+                <span class="skill-category-tag">Core Programming</span>
               </div>
             </div>
             <div class="skill-progress-wrap">
               <div class="skill-progress-bar">
-                <div class="skill-progress-fill" style="width: 78%;"></div>
+                <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
             </div>
-            <p class="skill-desc">Core OOP concepts, inheritance, polymorphism, data structures, and problem solving.
-            </p>
+            <p class="skill-desc">Core OOP principles, data structures, and algorithmic problem solving.</p>
           </div>
 
           <!-- Skill 7: HTML5 & CSS3 -->
@@ -381,7 +358,7 @@
               <div class="skill-icon-wrap" style="color: #E34F26;">🌐</div>
               <div class="skill-info">
                 <h4>HTML5 &amp; CSS3</h4>
-                <span class="skill-category-tag">Web Development</span>
+                <span class="skill-category-tag">Frontend</span>
               </div>
             </div>
             <div class="skill-progress-wrap">
@@ -389,8 +366,7 @@
                 <div class="skill-progress-fill" style="width: 90%;"></div>
               </div>
             </div>
-            <p class="skill-desc">Semantic HTML, modern CSS layouts (Flexbox, Grid), responsive UI, and
-              micro-animations.</p>
+            <p class="skill-desc">Semantic structure, responsive layouts (Flexbox &amp; Grid), and animations.</p>
           </div>
 
           <!-- Skill 8: SQL -->
@@ -398,7 +374,7 @@
             <div class="skill-header">
               <div class="skill-icon-wrap" style="color: #4479A1;">🗄️</div>
               <div class="skill-info">
-                <h4>SQL / Relational DB</h4>
+                <h4>SQL</h4>
                 <span class="skill-category-tag">Database</span>
               </div>
             </div>
@@ -407,11 +383,11 @@
                 <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
             </div>
-            <p class="skill-desc">Database schema design, queries, joins, filtering, and data manipulation.</p>
+            <p class="skill-desc">Database schema design, relational queries, joins, and data manipulation.</p>
           </div>
 
           <!-- Skill 9: Git & GitHub -->
-          <div class="skill-card" data-category="design">
+          <div class="skill-card" data-category="tools">
             <div class="skill-header">
               <div class="skill-icon-wrap" style="color: #F05032;">🐙</div>
               <div class="skill-info">
@@ -421,65 +397,10 @@
             </div>
             <div class="skill-progress-wrap">
               <div class="skill-progress-bar">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
+                <div class="skill-progress-fill" style="width: 86%;"></div>
               </div>
             </div>
-            <p class="skill-desc">Source code management, branching strategies, commit hygiene, and collaborative
-              workflows.</p>
-          </div>
-
-          <!-- Skill 10: Soft Skills -->
-          <div class="skill-card" data-category="soft">
-            <div class="skill-header">
-              <div class="skill-icon-wrap" style="color: #10B981;">🤝</div>
-              <div class="skill-info">
-                <h4>Team Collaboration</h4>
-                <span class="skill-category-tag">Professional Skill</span>
-              </div>
-            </div>
-            <div class="skill-progress-wrap">
-              <div class="skill-progress-bar">
-                <div class="skill-progress-fill" style="width: 92%;"></div>
-              </div>
-            </div>
-            <p class="skill-desc">Effective team communication, agile adaptability, eager learning, and active
-              participation.</p>
-          </div>
-
-          <!-- Skill 11: Problem Solving -->
-          <div class="skill-card" data-category="soft">
-            <div class="skill-header">
-              <div class="skill-icon-wrap" style="color: #8B5CF6;">💡</div>
-              <div class="skill-info">
-                <h4>Problem Solving</h4>
-                <span class="skill-category-tag">Analytical</span>
-              </div>
-            </div>
-            <div class="skill-progress-wrap">
-              <div class="skill-progress-bar">
-                <div class="skill-progress-fill" style="width: 88%;"></div>
-              </div>
-            </div>
-            <p class="skill-desc">Analytical debugging, requirement breakdown, structured logic development, and quick
-              adaptation.</p>
-          </div>
-
-          <!-- Skill 12: Creative Design & Henna Art -->
-          <div class="skill-card" data-category="soft">
-            <div class="skill-header">
-              <div class="skill-icon-wrap" style="color: #F59E0B;">✨</div>
-              <div class="skill-info">
-                <h4>Visual Arts &amp; Drawing</h4>
-                <span class="skill-category-tag">Creative Eye</span>
-              </div>
-            </div>
-            <div class="skill-progress-wrap">
-              <div class="skill-progress-bar">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-            </div>
-            <p class="skill-desc">Strong visual symmetry, precision, aesthetic judgment, and creative
-              detail-orientation.</p>
+            <p class="skill-desc">Branching workflows, version control management, and team collaboration.</p>
           </div>
         </div>
       </div>
@@ -492,7 +413,7 @@
           <span class="section-subtitle">Career Journey</span>
           <h2 class="section-title">Internship <span class="gradient-text">Experience</span></h2>
           <p class="section-desc">
-            Practical hands-on industry experience building real-world applications and machine learning models.
+            Hands-on industry experience in mobile application development and machine learning.
           </p>
         </div>
 
@@ -503,7 +424,7 @@
             <div class="timeline-card">
               <div class="timeline-header">
                 <div>
-                  <h3 class="timeline-role">Intern – Mobile App Development &amp; UI/UX Design</h3>
+                  <h3 class="timeline-role">Mobile App Development &amp; UI/UX Intern</h3>
                   <div class="timeline-company">
                     <span>🏢 Aslaniya Tech</span>
                     <span>•</span>
@@ -514,20 +435,12 @@
               </div>
 
               <ul class="timeline-bullets">
-                <li>Gained hands-on experience working on a real-time mobile application development project using
-                  <strong>Flutter and Dart</strong>.
-                </li>
-                <li>Designed intuitive user interfaces and created comprehensive mobile application prototypes using
-                  <strong>Figma</strong> and UI/UX design principles.
-                </li>
-                <li>Developed and integrated responsive frontend and backend functionalities for mobile applications
-                  using <strong>Flutter, Dart, and Firebase</strong>.</li>
-                <li>Gained practical experience in <strong>Firebase integration</strong> for backend cloud services,
-                  user authentication, and real-time database management.</li>
-                <li>Used <strong>Git and GitHub</strong> for version control, source code management, and collaborative
-                  team development.</li>
-                <li>Gained practical knowledge of the complete mobile application development lifecycle through
-                  real-world project tasks.</li>
+                <li>Built real-time cross-platform mobile application features using <strong>Flutter and Dart</strong>
+                  with clean component hierarchy.</li>
+                <li>Designed intuitive mobile interfaces and interactive clickable prototypes in <strong>Figma</strong>
+                  following modern UX guidelines.</li>
+                <li>Integrated <strong>Firebase Cloud services</strong> for user authentication and real-time database
+                  synchronization.</li>
               </ul>
 
               <div class="tech-tags">
@@ -536,8 +449,7 @@
                 <span class="tech-tag">Figma</span>
                 <span class="tech-tag">Firebase</span>
                 <span class="tech-tag">Git</span>
-                <span class="tech-tag">GitHub</span>
-                <span class="tech-tag">UI/UX Design</span>
+                <span class="tech-tag">UI/UX</span>
               </div>
             </div>
           </div>
@@ -559,20 +471,16 @@
               </div>
 
               <ul class="timeline-bullets">
-                <li>Machine Learning Intern from May 10, 2024 to July 10, 2024 at Kaashiv Infotech.</li>
-                <li>Gained hands-on experience in developing, training, and deploying <strong>machine learning
-                    models</strong>.</li>
-                <li>Worked on small-scale projects applying ML algorithms for predictive analysis and pattern
-                  recognition.</li>
-                <li>Conducted dataset exploration, feature engineering, and performance metric evaluations in Python.
-                </li>
+                <li>Trained, evaluated, and deployed <strong>machine learning models</strong> in Python for predictive
+                  data analysis and pattern recognition.</li>
+                <li>Performed exploratory data analysis (EDA), data cleaning, feature engineering, and model accuracy
+                  benchmarking.</li>
               </ul>
 
               <div class="tech-tags">
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">Machine Learning</span>
                 <span class="tech-tag">Predictive Analysis</span>
-                <span class="tech-tag">Model Deployment</span>
                 <span class="tech-tag">Data Science</span>
               </div>
             </div>
@@ -588,38 +496,35 @@
           <span class="section-subtitle">Portfolio Showcase</span>
           <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
           <p class="section-desc">
-            A selection of projects demonstrating mobile development, computer vision, and machine learning.
+            Key projects demonstrating cross-platform mobile development, computer vision, and AI.
           </p>
         </div>
 
         <div class="projects-grid">
-          <!-- Project 1: Offline Chatbot -->
+          <!-- Project 1: Flutter Mobile App -->
           <div class="project-card">
-            <div class="project-banner">
-              <span class="project-category-badge">AI / NLP</span>
-              <div class="project-banner-icon">💬</div>
+            <div class="project-banner" style="background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);">
+              <span class="project-category-badge">Mobile / UI/UX</span>
+              <div class="project-banner-icon">📱</div>
             </div>
             <div class="project-body">
-              <h3 class="project-title">Offline ChatBot</h3>
+              <h3 class="project-title">Real-Time Mobile Application</h3>
               <p class="project-summary">
-                Developed an offline chatbot with advanced context-understanding capabilities paired with an intuitive
-                Streamlit interface for seamless user engagement without internet dependency.
+                Cross-platform mobile app designed in Figma and developed in Flutter with Firebase for real-time data
+                sync and user authentication.
               </p>
-              <div class="tech-tags" style="margin-bottom: 1.25rem;">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Streamlit</span>
-                <span class="tech-tag">NLP</span>
-                <span class="tech-tag">Offline AI</span>
+              <div class="tech-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Figma</span>
               </div>
               <div class="project-footer">
-                <button class="project-action-link project-detail-btn" data-project="offline-chatbot">
+                <button class="project-action-link project-detail-btn" data-project="mobile-app">
                   <span>View Details</span>
                   <span>→</span>
                 </button>
-                <a href="#contact" class="btn-icon" title="Ask about project"
-                  style="width: 36px; height: 36px; font-size: 0.9rem;">
-                  ✉️
-                </a>
+                <a href="#contact" class="btn-icon" title="Inquire about project">✉️</a>
               </div>
             </div>
           </div>
@@ -634,10 +539,10 @@
             <div class="project-body">
               <h3 class="project-title">Hand Gesture Recognition</h3>
               <p class="project-summary">
-                Built a real-time hand gesture recognition system using Python, OpenCV, and MediaPipe. Trained a deep
-                learning model to classify gestures with high accuracy and interactive tracking overlays.
+                Real-time gesture recognition system utilizing Python, OpenCV, and MediaPipe landmark tracking for
+                intuitive computer interaction.
               </p>
-              <div class="tech-tags" style="margin-bottom: 1.25rem;">
+              <div class="tech-tags">
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">OpenCV</span>
                 <span class="tech-tag">MediaPipe</span>
@@ -648,59 +553,53 @@
                   <span>View Details</span>
                   <span>→</span>
                 </button>
-                <a href="#contact" class="btn-icon" title="Ask about project"
-                  style="width: 36px; height: 36px; font-size: 0.9rem;">
-                  ✉️
-                </a>
+                <a href="#contact" class="btn-icon" title="Inquire about project">✉️</a>
               </div>
             </div>
           </div>
 
-          <!-- Project 3: Flutter Mobile App -->
+          <!-- Project 3: Offline Chatbot -->
           <div class="project-card">
-            <div class="project-banner" style="background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);">
-              <span class="project-category-badge">Mobile / UI/UX</span>
-              <div class="project-banner-icon">📱</div>
+            <div class="project-banner">
+              <span class="project-category-badge">AI / NLP</span>
+              <div class="project-banner-icon">💬</div>
             </div>
             <div class="project-body">
-              <h3 class="project-title">Real-Time Mobile Application</h3>
+              <h3 class="project-title">Offline AI ChatBot</h3>
               <p class="project-summary">
-                Designed user interfaces and prototypes in Figma and developed full frontend/backend functionality using
-                Flutter, Dart, and Firebase with real-time cloud data sync.
+                Context-aware offline conversational chatbot with an interactive Streamlit interface providing instant
+                responses without internet.
               </p>
-              <div class="tech-tags" style="margin-bottom: 1.25rem;">
-                <span class="tech-tag">Flutter</span>
-                <span class="tech-tag">Dart</span>
-                <span class="tech-tag">Firebase</span>
-                <span class="tech-tag">Figma</span>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Offline AI</span>
               </div>
               <div class="project-footer">
-                <button class="project-action-link project-detail-btn" data-project="mobile-app">
+                <button class="project-action-link project-detail-btn" data-project="offline-chatbot">
                   <span>View Details</span>
                   <span>→</span>
                 </button>
-                <a href="#contact" class="btn-icon" title="Ask about project"
-                  style="width: 36px; height: 36px; font-size: 0.9rem;">
-                  ✉️
-                </a>
+                <a href="#contact" class="btn-icon" title="Inquire about project">✉️</a>
               </div>
             </div>
           </div>
 
-          <!-- Project 4: Developer Portfolio Website -->
+          <!-- Project 4: Developer Portfolio -->
           <div class="project-card">
             <div class="project-banner" style="background: linear-gradient(135deg, #4c1d95 0%, #0f172a 100%);">
               <span class="project-category-badge"
-                style="color: var(--accent-secondary); border-color: rgba(139, 92, 246, 0.3);">Frontend / Web</span>
+                style="color: var(--accent-secondary); border-color: rgba(139, 92, 246, 0.3);">Frontend &amp; UI</span>
               <div class="project-banner-icon">✨</div>
             </div>
             <div class="project-body">
-              <h3 class="project-title">Personal Portfolio Website</h3>
+              <h3 class="project-title">Developer Portfolio Website</h3>
               <p class="project-summary">
-                A clean, modern, and accessible developer portfolio with dark/light mode toggle, dynamic typing,
-                responsive glassmorphism styling, and zero-build GitHub Pages deployment.
+                High-performance portfolio website with glassmorphic aesthetics, dynamic dark/light themes, and
+                responsive design.
               </p>
-              <div class="tech-tags" style="margin-bottom: 1.25rem;">
+              <div class="tech-tags">
                 <span class="tech-tag">HTML5</span>
                 <span class="tech-tag">CSS3</span>
                 <span class="tech-tag">JavaScript</span>
@@ -711,10 +610,7 @@
                   <span>View Details</span>
                   <span>→</span>
                 </button>
-                <a href="#hero" class="btn-icon" title="Scroll to top"
-                  style="width: 36px; height: 36px; font-size: 0.9rem;">
-                  🚀
-                </a>
+                <a href="#hero" class="btn-icon" title="Back to top">🚀</a>
               </div>
             </div>
           </div>
@@ -729,13 +625,13 @@
           <span class="section-subtitle">Academic Credentials</span>
           <h2 class="section-title">Education &amp; <span class="gradient-text">Certifications</span></h2>
           <p class="section-desc">
-            Academic achievements, coursework foundations, and recognized NPTEL certifications.
+            Academic foundations and recognized NPTEL online course distinctions.
           </p>
         </div>
 
         <div class="edu-cert-grid">
           <!-- Education Column -->
-          <div>
+          <div class="edu-column">
             <h3 class="edu-column-title">
               <span>🎓</span>
               <span>Academic Education</span>
@@ -745,7 +641,7 @@
               <!-- B.Tech IT -->
               <div class="edu-card">
                 <div class="edu-degree">B.Tech in Information Technology</div>
-                <div class="edu-institution">Kalasalingam Academy of Research and Education, Krishnankoil</div>
+                <div class="edu-institution">Kalasalingam Academy of Research and Education</div>
                 <div class="edu-meta">
                   <span>📅 2022 – 2026</span>
                   <span class="edu-score-pill">CGPA: 8.44 / 10</span>
@@ -755,7 +651,7 @@
               <!-- HSC -->
               <div class="edu-card">
                 <div class="edu-degree">Higher Secondary Certificate (HSC)</div>
-                <div class="edu-institution">MCNUPDA Higher Secondary School, M.C.Puram, Virudhunagar</div>
+                <div class="edu-institution">MCNUPDA Higher Secondary School</div>
                 <div class="edu-meta">
                   <span>📅 2022</span>
                   <span class="edu-score-pill">Score: 77.4%</span>
@@ -765,7 +661,7 @@
               <!-- SSLC -->
               <div class="edu-card">
                 <div class="edu-degree">Secondary School Leaving Certificate (SSLC)</div>
-                <div class="edu-institution">MCNUPDA Higher Secondary School, M.C.Puram, Virudhunagar</div>
+                <div class="edu-institution">MCNUPDA Higher Secondary School</div>
                 <div class="edu-meta">
                   <span>📅 2020</span>
                   <span class="edu-score-pill">Score: 87.5%</span>
@@ -775,7 +671,7 @@
           </div>
 
           <!-- Certifications Column -->
-          <div>
+          <div class="cert-column">
             <h3 class="cert-column-title">
               <span>🏆</span>
               <span>NPTEL Certifications</span>
@@ -783,7 +679,7 @@
 
             <div class="nptel-summary-card">
               <h4>National Programme on Technology Enhanced Learning</h4>
-              <p>Completed <strong>5 online specialized courses with Distinction</strong> awarded by NPTEL / IITs.</p>
+              <p>Completed <strong>5 specialized online courses with Distinction</strong> awarded by NPTEL / IITs.</p>
             </div>
 
             <div class="cert-cards-list">
@@ -837,19 +733,22 @@
       </div>
     </section>
 
-    <!-- 7. Contact & Hire Me Section -->
+    <!-- 7. Contact Section -->
+
+
+
     <section class="section" id="contact">
       <div class="container">
         <div class="section-header">
           <span class="section-subtitle">Let's Connect</span>
           <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
           <p class="section-desc">
-            I am actively seeking fresher roles, entry-level developer positions, and mobile app opportunities.
+            Open to software engineering roles, mobile developer positions, and internships.
           </p>
         </div>
 
         <div class="contact-grid">
-          <!-- Direct Channels -->
+          <!-- Direct Channels Cards -->
           <div class="contact-info-cards">
             <!-- Email -->
             <a href="mailto:deepikat2004@gmail.com" class="contact-card" id="contact-card-email">
@@ -879,57 +778,21 @@
             </div>
 
             <!-- Resume Download Box -->
-            <div class="contact-card" style="border-color: rgba(99, 102, 241, 0.3);">
+            <div class="contact-card contact-resume-card">
               <div class="contact-card-icon">📄</div>
               <div class="contact-card-text">
                 <h4>Resume Document</h4>
-                <p style="margin-bottom: 0.4rem;">Deepika Resume (PDF)</p>
-                <div style="display: flex; gap: 0.5rem;">
-                  <a href="assets/Deepika.pdf" download="Deepika.pdf" class="btn btn-primary btn-sm"
-                    style="padding: 0.35rem 0.85rem; font-size: 0.8rem;">
+                <p style="margin-bottom: 0.5rem;">Deepika_Resume.pdf</p>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                  <a href="assets/Deepika.pdf" download="Deepika.pdf" class="btn btn-primary btn-sm">
                     Download PDF
                   </a>
-                  <button class="btn btn-outline btn-sm open-resume-modal"
-                    style="padding: 0.35rem 0.85rem; font-size: 0.8rem;">
+                  <!-- <button class="btn btn-outline btn-sm open-resume-modal">
                     Preview PDF
-                  </button>
+                  </button> -->
                 </div>
               </div>
             </div>
-          </div>
-
-          <!-- Contact Form -->
-          <div class="contact-form-wrapper">
-            <h3 style="font-size: 1.4rem; margin-bottom: 1.25rem;">Send a Direct Message</h3>
-            <form id="contact-form" class="contact-form">
-              <div class="form-group">
-                <label for="contact-name" class="form-label">Your Name</label>
-                <input type="text" id="contact-name" class="form-control" placeholder="e.g. John Doe" required>
-              </div>
-
-              <div class="form-group">
-                <label for="contact-email" class="form-label">Your Email</label>
-                <input type="email" id="contact-email" class="form-control" placeholder="e.g. john@example.com"
-                  required>
-              </div>
-
-              <div class="form-group">
-                <label for="contact-subject" class="form-label">Subject</label>
-                <input type="text" id="contact-subject" class="form-control"
-                  placeholder="e.g. Job Opportunity / Interview Invitation">
-              </div>
-
-              <div class="form-group">
-                <label for="contact-message" class="form-label">Message</label>
-                <textarea id="contact-message" class="form-control" placeholder="Write your message here..."
-                  required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
-                <span>Send Message</span>
-                <span>🚀</span>
-              </button>
-            </form>
           </div>
         </div>
       </div>
@@ -942,6 +805,7 @@
       <div class="footer-content">
         <div class="footer-brand">
           <span class="gradient-text">Deepika</span> T
+          <span class="brand-dot"></span>
         </div>
 
         <ul class="footer-links">
@@ -955,31 +819,29 @@
         </ul>
       </div>
 
-      <div class="footer-bottom">
-        <p>© 2026 Deepika T. All rights reserved. Built with clean HTML5, CSS3, &amp; JavaScript for lightning-fast
-          performance.</p>
-      </div>
+      <!-- <div class="footer-bottom">
+        <p>© 2026 Deepika T. Built with clean HTML5, CSS3, &amp; JavaScript.</p>
+      </div> -->
     </div>
   </footer>
 
   <!-- Project Details Modal -->
-  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="modal-content">
       <button class="modal-close-btn" aria-label="Close modal">✕</button>
       <div id="project-modal-body">
-        <!-- Injected via JavaScript -->
+        <!-- Dynamically populated via JavaScript -->
       </div>
     </div>
   </div>
 
   <!-- Resume Preview Modal -->
-  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true">
+  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="modal-content" style="max-width: 850px;">
       <button class="modal-close-btn" aria-label="Close modal">✕</button>
-      <div
-        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+      <div class="modal-resume-header">
         <div>
-          <h2 style="font-size: 1.5rem;">Deepika T — Resume Preview</h2>
+          <h2 style="font-size: 1.4rem;">Deepika T — Resume Preview</h2>
           <p style="font-size: 0.85rem; color: var(--text-muted);">B.Tech Information Technology • Kalasalingam Academy
           </p>
         </div>
